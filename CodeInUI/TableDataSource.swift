@@ -22,3 +22,7 @@ class TableDataSource: NSObject, UITableViewDataSource {
         return cell
     }
 }
+
+// For a tidy and readable VC, it is essential to refactor the TableView data source into a separate file.
+// The only main difference here is we do not use `override`, since we do not override anything.
+// Note that we have inherited from `NSObject` and `UITableViewDataSource`.

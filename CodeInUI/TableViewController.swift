@@ -18,6 +18,8 @@ class TableViewController: UITableViewController {
         title = "CodeInUI"
         navigationController?.navigationBar.prefersLargeTitles = true
         
+        // This is the code version of setting the cell identifier in storyboards.
+        // For custom cell implementations, create a cell class, and refer to it below
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: dataSource.cellID)
         tableView.dataSource = dataSource
     }
