@@ -12,6 +12,7 @@
 		0867D7C7234C940500B428E0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0867D7C6234C940500B428E0 /* TableViewController.swift */; };
 		0867D7CC234C940600B428E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0867D7CB234C940600B428E0 /* Assets.xcassets */; };
 		0867D7CF234C940600B428E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0867D7CD234C940600B428E0 /* LaunchScreen.storyboard */; };
+		0867D7D9234CA25300B428E0 /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0867D7D8234CA25300B428E0 /* TableDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0867D7CB234C940600B428E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0867D7CE234C940600B428E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0867D7D0234C940600B428E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0867D7D8234CA25300B428E0 /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				0867D7C2234C940500B428E0 /* AppDelegate.swift */,
 				0867D7C4234C940500B428E0 /* SceneDelegate.swift */,
+				0867D7D8234CA25300B428E0 /* TableDataSource.swift */,
 				0867D7C6234C940500B428E0 /* TableViewController.swift */,
 				0867D7CB234C940600B428E0 /* Assets.xcassets */,
 				0867D7CD234C940600B428E0 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			files = (
 				0867D7C7234C940500B428E0 /* TableViewController.swift in Sources */,
 				0867D7C3234C940500B428E0 /* AppDelegate.swift in Sources */,
+				0867D7D9234CA25300B428E0 /* TableDataSource.swift in Sources */,
 				0867D7C5234C940500B428E0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

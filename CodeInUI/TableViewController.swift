@@ -9,26 +9,16 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    
+    let dataSource = TableDataSource()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        view = UIView()
-//        view.backgroundColor = .systemBackground
-//        
-//        let stackView = UIStackView()
-//        stackView.axis = .vertical
-//        stackView.translatesAutoresizingMaskIntoConstraints = false
-//        view.addSubview(stackView)
-//        
-//        NSLayoutConstraint.activate([
-//            stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-//            stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
-//        ])
-//        
-//        let label = UILabel()
-//        label.text = "This is a basic UI in code"
-//        stackView.addArrangedSubview(label)
+        title = "CodeInUI"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: dataSource.cellID)
+        tableView.dataSource = dataSource
     }
 }
-
