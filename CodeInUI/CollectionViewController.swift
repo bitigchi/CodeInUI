@@ -8,9 +8,9 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class CollectionViewController: UICollectionViewController {
     
-    let dataSource = TableDataSource()
+    let dataSource = CollectionViewDataSource()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +20,8 @@ class TableViewController: UITableViewController {
         
         // This is the code version of setting the cell identifier in storyboards.
         // For custom cell implementations, create a cell class, and refer to it below
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: dataSource.cellID)
-        tableView.dataSource = dataSource
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: dataSource.cellID)
+        collectionView.dataSource = dataSource
+        collectionView.backgroundColor = .systemBackground
     }
 }

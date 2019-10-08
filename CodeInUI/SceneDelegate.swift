@@ -18,7 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
         window?.windowScene = windowScene
         
-        let controller = TableViewController()
+        let flowLayout = UICollectionViewFlowLayout()
+        let controller = CollectionViewController(collectionViewLayout: flowLayout)
         let navigationController = UINavigationController(rootViewController: controller)
         window?.rootViewController = navigationController
     }
