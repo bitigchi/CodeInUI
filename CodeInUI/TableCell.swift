@@ -11,13 +11,13 @@ import UIKit
 class TableCell: UITableViewCell {
     let cellView: UIView = {
        let view = UIView()
-        view.backgroundColor = .systemRed
+        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
     let labelView: UILabel = {
         let label = UILabel()
-        label.text = "Cell 1"
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -31,12 +31,11 @@ class TableCell: UITableViewCell {
     }
     
     func setup() {
-        addSubview(cellView)
+        contentView.addSubview(cellView)
         NSLayoutConstraint.activate([
-            cellView.topAnchor.constraint(equalTo: topAnchor),
-            cellView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            cellView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            cellView.trailingAnchor.constraint(equalTo: trailingAnchor)])
+            cellView.topAnchor.constraint(equalTo: contentView.layoutMarginsGuide.topAnchor),
+            cellView.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor),
+            cellView.trailingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.trailingAnchor)])
         cellView.addSubview(labelView)
     }
 }
