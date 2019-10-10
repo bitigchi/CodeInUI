@@ -1,20 +1,23 @@
 //
-//  ViewController.swift
+//  ThirdViewController.swift
 //  CodeInUI
 //
-//  Created by Emir SARI on 8.10.2019.
+//  Created by Emir SARI on 10.10.2019.
 //  Copyright © 2019 Emir SARI. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class ThirdViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view = UIView()
         view.backgroundColor = .systemBackground
+        
+        title = "Üç"
+        navigationController?.navigationBar.prefersLargeTitles = true
         
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -27,8 +30,7 @@ class ViewController: UIViewController {
         ])
         
         let label = UILabel()
-        label.text = "This is a basic UI in code"
+        label.text = "Third View Controller"
         stackView.addArrangedSubview(label)
     }
 }
-
