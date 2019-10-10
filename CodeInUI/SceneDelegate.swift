@@ -11,11 +11,19 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var navigationVC: UINavigationController!
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        let mainVC = MainViewController()
+        let detailVC = DetailViewController()
+        let splitVC = UISplitViewController()
+        navigationVC = UINavigationController(rootViewController: mainVC)
+        splitVC.viewControllers = [navigationVC, detailVC]
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = ViewController()
+        window?.rootViewController = splitVC
         window?.makeKeyAndVisible()
         window?.windowScene = windowScene
     }

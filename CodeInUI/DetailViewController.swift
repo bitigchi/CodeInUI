@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  DetailViewController.swift
 //  CodeInUI
 //
-//  Created by Emir SARI on 8.10.2019.
+//  Created by Emir SARI on 10.10.2019.
 //  Copyright © 2019 Emir SARI. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +27,7 @@ class ViewController: UIViewController {
         ])
         
         let label = UILabel()
-        label.text = "This is a basic UI in code"
+        label.text = "This is the detail view controller"
         stackView.addArrangedSubview(label)
     }
 }
-
