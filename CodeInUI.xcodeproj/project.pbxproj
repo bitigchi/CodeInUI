@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081170C9234F6AEE0084B060 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081170C8234F6AEE0084B060 /* TableCell.swift */; };
 		0867D7C3234C940500B428E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0867D7C2234C940500B428E0 /* AppDelegate.swift */; };
 		0867D7C5234C940500B428E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0867D7C4234C940500B428E0 /* SceneDelegate.swift */; };
 		0867D7C7234C940500B428E0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0867D7C6234C940500B428E0 /* TableViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		081170C8234F6AEE0084B060 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		0867D7BF234C940500B428E0 /* CodeInUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeInUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0867D7C2234C940500B428E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0867D7C4234C940500B428E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				0867D7C2234C940500B428E0 /* AppDelegate.swift */,
 				0867D7C4234C940500B428E0 /* SceneDelegate.swift */,
+				081170C8234F6AEE0084B060 /* TableCell.swift */,
 				0867D7D8234CA25300B428E0 /* TableDataSource.swift */,
 				0867D7C6234C940500B428E0 /* TableViewController.swift */,
 				0867D7CB234C940600B428E0 /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				081170C9234F6AEE0084B060 /* TableCell.swift in Sources */,
 				0867D7C7234C940500B428E0 /* TableViewController.swift in Sources */,
 				0867D7C3234C940500B428E0 /* AppDelegate.swift in Sources */,
 				0867D7D9234CA25300B428E0 /* TableDataSource.swift in Sources */,

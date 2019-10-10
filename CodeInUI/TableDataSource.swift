@@ -13,12 +13,12 @@ class TableDataSource: NSObject, UITableViewDataSource {
     let basicTable = ["This is an example cell"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return basicTable.count
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
-        cell.textLabel?.text = basicTable[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! TableCell
+//        cell.textLabel?.text = basicTable[indexPath.row]
         return cell
     }
 }
