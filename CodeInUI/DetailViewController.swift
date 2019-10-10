@@ -9,7 +9,7 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,7 +27,7 @@ class DetailViewController: UIViewController {
         ])
         
         let label = UILabel()
-        label.text = "This is the detail view controller"
+        label.text = "Detail item"
         stackView.addArrangedSubview(label)
     }
 }

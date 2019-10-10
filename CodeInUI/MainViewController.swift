@@ -9,26 +9,22 @@
 import UIKit
 
 class MainViewController: UITableViewController {
+    let dataSource = TableDataSource()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        view = UIView()
-//        view.backgroundColor = .systemBackground
-//
-//        let stackView = UIStackView()
-//        stackView.axis = .vertical
-//        stackView.translatesAutoresizingMaskIntoConstraints = false
-//        view.addSubview(stackView)
-//
-//        NSLayoutConstraint.activate([
-//            stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-//            stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
-//        ])
-//
-//        let label = UILabel()
-//        label.text = "This is the master view controller"
-//        stackView.addArrangedSubview(label)
+        title = "CodeInUI"
+        navigationController?.navigationBar.prefersLargeTitles = true
+                
+        // This is the code version of setting the cell identifier in storyboards.
+        // For custom cell implementations, create a cell class, and refer to it below
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: dataSource.cellID)
+        tableView.dataSource = dataSource        
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

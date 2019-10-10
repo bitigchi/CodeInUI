@@ -13,6 +13,7 @@
 		0867D7CC234C940600B428E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0867D7CB234C940600B428E0 /* Assets.xcassets */; };
 		0867D7CF234C940600B428E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0867D7CD234C940600B428E0 /* LaunchScreen.storyboard */; };
 		08E98B41234F13E700353AEE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E98B40234F13E700353AEE /* DetailViewController.swift */; };
+		08E98B43234F180300353AEE /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E98B42234F180300353AEE /* TableDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0867D7CE234C940600B428E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0867D7D0234C940600B428E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08E98B40234F13E700353AEE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		08E98B42234F180300353AEE /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				0867D7C2234C940500B428E0 /* AppDelegate.swift */,
 				0867D7C4234C940500B428E0 /* SceneDelegate.swift */,
+				08E98B42234F180300353AEE /* TableDataSource.swift */,
 				0867D7C6234C940500B428E0 /* MainViewController.swift */,
 				08E98B40234F13E700353AEE /* DetailViewController.swift */,
 				0867D7CB234C940600B428E0 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			files = (
 				0867D7C7234C940500B428E0 /* MainViewController.swift in Sources */,
 				0867D7C3234C940500B428E0 /* AppDelegate.swift in Sources */,
+				08E98B43234F180300353AEE /* TableDataSource.swift in Sources */,
 				0867D7C5234C940500B428E0 /* SceneDelegate.swift in Sources */,
 				08E98B41234F13E700353AEE /* DetailViewController.swift in Sources */,
 			);
