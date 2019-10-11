@@ -7,3 +7,9 @@ To see different user-interface code examples, browse through branches.
 * basicvc: Basic ViewController implementation in code
 * tablevc: Basic TableViewController implementation in code, with standard cell format
 * collectionvc: Basic CollectionViewController implementation in code, with standard cell format, no content
+* splitvc: Basic SplitViewController, including a TableView on MasterViewController
+* tabbarvc: Basic TabBarController, including three ViewControllers
+
+In addition to those above:
+* tablevc-customcell: A variation of above tablevc with custom cell
+* collectionvc-customcell: A variation of above collectionvc with custom cell
