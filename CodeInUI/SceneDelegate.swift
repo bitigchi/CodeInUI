@@ -19,6 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         
         let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.scrollDirection = .vertical
         let controller = CollectionViewController(collectionViewLayout: flowLayout)
         let navigationController = UINavigationController(rootViewController: controller)
         window?.rootViewController = navigationController

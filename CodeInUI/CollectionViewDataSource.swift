@@ -10,12 +10,13 @@ import UIKit
 
 class CollectionViewDataSource: NSObject, UICollectionViewDataSource {
     let cellID = "cell"
-    let basicTable = ["This is an example cell"]
     
+    // Return cells
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return basicTable.count
+        return 1
     }
     
+    // Set cell data source (no data in this case)
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath)
         cell.backgroundColor = .systemPink
