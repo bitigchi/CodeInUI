@@ -11,4 +11,5 @@ To see different user-interface code examples, browse through branches.
 * tabbarvc: Basic TabBarController, including three ViewControllers
 
 In addition to those above:
-* tablevc-customcell: An implementation of above tablevc with a custom cell (currently broken)
+* tablevc-customcell: A variation of above tablevc with custom cell
+* collectionvc-customcell: A variation of above collectionvc with custom cell
