@@ -9,31 +9,22 @@
 import UIKit
 
 class InPageViewController: UIViewController {
-//    private let stackView: UIStackView = {
-//        let stack = UIStackView()
-//        stack.axis = .vertical
-//        stack.translatesAutoresizingMaskIntoConstraints = false
-//        return stack
-//    }()
-    
     private let labelView: UILabel = {
         let label = UILabel()
-        label.text = "Hebee"
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    
     init(data: PageData) {
         super.init(nibName: nil, bundle: nil)
+        labelView.text = data.dataName
         view.backgroundColor = .systemTeal
-        view.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(labelView)
         
         NSLayoutConstraint.activate([
-            NSLayoutConstraint.init(item: labelView, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0),
-            NSLayoutConstraint.init(item: labelView, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1, constant: 0)
+            labelView.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
+            labelView.centerYAnchor.constraint(equalTo: view.layoutMarginsGuide.centerYAnchor),
         ])
-
     }
     
     required init?(coder: NSCoder) {

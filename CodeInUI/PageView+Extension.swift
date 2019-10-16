@@ -26,17 +26,19 @@ extension PageViewController: UIPageViewControllerDelegate, UIPageViewController
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
                 guard let viewController = viewController as? InPageViewController else { return nil }
         if let index = arrayInPageViewController.firstIndex(of: viewController) {
-            if index > 0 {
-                return arrayInPageViewController[index - 1]
+            if index < dataArray.count - 1 {
+                return arrayInPageViewController[index + 1]
             }
         }
         return nil
     }
     
+    // Get the total number of pages
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
         return dataArray.count
     }
     
+    // Determine the starting page
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         return 0
     }

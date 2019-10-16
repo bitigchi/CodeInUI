@@ -17,8 +17,7 @@ class PageViewController: UIPageViewController {
     }
     
     func setupView() {
-        title = "A fistful of Datas"
-        view.backgroundColor = .red
+        title = "A Fistful of Datas"
     }
     
     lazy var arrayInPageViewController: [InPageViewController] = {
@@ -30,15 +29,13 @@ class PageViewController: UIPageViewController {
     }()
     
     override init(transitionStyle style: UIPageViewController.TransitionStyle, navigationOrientation: UIPageViewController.NavigationOrientation, options: [UIPageViewController.OptionsKey : Any]? = nil) {
-        super.init(transitionStyle: .pageCurl, navigationOrientation: navigationOrientation, options: nil)
+        super.init(transitionStyle: .scroll, navigationOrientation: navigationOrientation, options: nil)
         
         self.dataSource = self
         self.delegate = self
         
         self.view.backgroundColor = .systemGray
-        self.view.frame(forAlignmentRect: CGRect(x: 100, y: 100, width: 100, height: 100))
         setViewControllers([arrayInPageViewController[0]], direction: .forward, animated: true, completion: nil)
-        print(dataArray)
     }
     
     required init?(coder: NSCoder) {
